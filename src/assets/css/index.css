@@ -6,3 +6,18 @@
 body {
   background-color: #212f3d;
 }
+
+.btn {
+  width: 45%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
