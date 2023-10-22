@@ -1,0 +1,56 @@
+.counter__container {
+  background-color: #4a235a;
+  height: 40vh;
+}
+
+.card {
+  background-color: #1c2833;
+  padding: 5% 15%;
+  display: flex;
+}
+.card-counter {
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 600;
+  background-color: #4a235a;
+  color: aliceblue;
+  width: 40%;
+}
+.card-actions {
+  width: 60%;
+  border-right: 2px solid aliceblue;
+}
+.card-actions-title {
+  color: aliceblue;
+  text-align: center;
+  font-size: 3rem;
+  margin: 15px;
+}
+
+.card-actions-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 45%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-add {
+  background-color: #5499c7;
+}
+.btn-add:hover {
+  background-color: #2980b9;
+}
+.btn-minus {
+  background-color: #ec7063;
+}
+.btn-minus:hover {
+  background-color: #e74c3c;
+}
