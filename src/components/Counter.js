@@ -21,7 +21,7 @@ function Counter() {
       <article className="card">
         <span className="card-counter">{counter}</span>
         <div className="card-actions">
-          <h2 className="card-actions-title">Counter</h2>
+          <h2 className="title card-actions-title">Counter</h2>
           <div className="card-actions-buttons">
             <button className="btn btn-add" onClick={increment}>
               <img src={iconPlus} alt="icon plus" />

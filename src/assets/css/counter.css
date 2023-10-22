@@ -22,24 +22,12 @@
 }
 .card-actions-title {
   color: aliceblue;
-  text-align: center;
-  font-size: 3rem;
   margin: 15px;
 }
 
 .card-actions-buttons {
   display: flex;
   justify-content: space-around;
-}
-
-.btn {
-  width: 45%;
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-}
-.btn:hover {
-  cursor: pointer;
 }
 
 .btn-add {
