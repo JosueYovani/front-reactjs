@@ -1,0 +1,85 @@
+.student-list {
+  height: 94vh;
+
+  &.dark-theme {
+    background-color: $background-color-dark;
+    color: $gray-100;
+  }
+
+  &.light-theme {
+    background-color: $background-color-light;
+    color: $dark-color;
+  }
+
+  h2 {
+    padding: 16px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  &__container {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+
+    .student-form {
+      h3 {
+        margin: 16px 0;
+        text-align: center;
+      }
+      .form-control {
+        margin-bottom: 10px;
+        label {
+          color: $secondary-color;
+        }
+        input {
+          height: 30px;
+          width: 100%;
+        }
+      }
+
+      &--actions {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+          margin-top: 16px;
+          color: $gray-100;
+          background-color: $primary-color;
+          height: 40px;
+          width: 100%;
+
+          &:hover {
+            background-color: $primary-highlight-color;
+          }
+        }
+      }
+    }
+
+    .student-table {
+      h3 {
+        margin: 16px 0;
+        text-align: center;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+    }
+  }
+}

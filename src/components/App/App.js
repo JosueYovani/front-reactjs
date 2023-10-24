@@ -1,11 +1,11 @@
 import React from "react";
 /** Imports Componenets **/
-import { Home } from "../../pages";
+import { Home, Tasks } from "../../pages";
 
 function App() {
   return (
     <>
-      <Home />
+      <Tasks />
     </>
   );
 }

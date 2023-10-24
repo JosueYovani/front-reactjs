@@ -1,0 +1,31 @@
+.tasks {
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  &__top-bar {
+    align-items: center;
+    background-color: peru;
+    display: flex;
+    height: 56px;
+    justify-content: flex-end;
+    padding: 0 2%;
+
+    &.dark-theme {
+      background-color: darken($color: $dark-color, $amount: 2.5);
+      color: $gray-100;
+    }
+    &.light-theme {
+      background-color: darken($color: $gray-100, $amount: 2);
+      color: $dark-color;
+    }
+
+    .btn-theme {
+      border: 0;
+      background-color: transparent;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
