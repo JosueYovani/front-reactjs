@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "../assets/css/counter.css";
-import iconPlus from "../assets/images/icons/plus-lg.svg";
-import iconDash from "../assets/images/icons/dash-lg.svg";
+
+/** Imports elements **/
+import iconPlus from "../../assets/images/icons/plus-lg.svg";
+import iconDash from "../../assets/images/icons/dash-lg.svg";
 
 function Counter() {
   /** State **/

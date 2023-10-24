@@ -1,0 +1,14 @@
+.header__container {
+  background-color: darken($color: $dark-color, $amount: 2.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  height: 56px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .brand-logo {
+    height: 35px;
+    width: auto;
+  }
+}

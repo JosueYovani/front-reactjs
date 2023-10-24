@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/css/form-name.css";
+import "./form-name.css";
 
 function FormName() {
   /** State **/
