@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/header.css";
+/** Imports elements **/
 import logoKodemia from "../assets/images/logos/kodemia-logo.svg";
 
 function Header() {
