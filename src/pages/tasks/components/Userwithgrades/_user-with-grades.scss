@@ -1,0 +1,24 @@
+.user-with-grades {
+  height: 94vh;
+  &.dark-theme {
+    background-color: $background-color-dark;
+    color: $gray-100;
+  }
+
+  &.light-theme {
+    background-color: peru;
+    color: $dark-color;
+  }
+
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+      color: aqua;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
