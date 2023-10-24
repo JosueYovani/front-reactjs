@@ -1,1 +1,1 @@
-export { UserWithGrades } from "./Userwithgrades/UserWithGrades";
+export { default as StudentList } from "./StudentList/StudentList";

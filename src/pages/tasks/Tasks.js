@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 /** Import components **/
-
+import { StudentList } from "./components";
 /** Import elements **/
 import iconMoon from "../../assets/images/icons/moon-stars-fill.svg";
 import iconSun from "../../assets/images/icons/brightness-high-fill.svg";
@@ -23,6 +23,7 @@ function Tasks() {
           <img src={!isActive ? iconMoon : iconSun} alt="icon button theme" />
         </button>
       </div>
+      <StudentList isActive={isActive} />
     </section>
   );
 }
