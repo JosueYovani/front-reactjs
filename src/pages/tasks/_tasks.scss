@@ -1,0 +1,15 @@
+.tasks {
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  &.dark-theme {
+    background-color: $background-color-dark;
+    color: $gray-100;
+  }
+
+  &.light-theme {
+    background-color: $background-color-light;
+    color: $dark;
+  }
+}
