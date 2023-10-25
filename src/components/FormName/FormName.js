@@ -1,8 +1,12 @@
-import React, { useState } from "react";
-import "./form-name.css";
+import React, { useContext, useState } from "react";
+
+/** Import context global **/
+import { ThemeContext } from "../../components/App/App";
 
 function FormName() {
-  /** State **/
+  /** State Global **/
+  const { isActive } = useContext(ThemeContext);
+  /** State Local **/
   const [nameFull, setNameFull] = useState({
     first_name: "",
     last_name: "",
@@ -20,9 +24,13 @@ function FormName() {
   };
 
   return (
-    <section className="form-name__container">
-      <h2 className="title">{viewName}</h2>
+    <section
+      className={`form-name__container ${
+        isActive ? "dark-theme" : "light-theme"
+      }`}
+    >
       <form>
+        <h2 className="title">{viewName}</h2>
         <div className="form-control">
           <label htmlFor="first_name">First Name:</label>
           <input

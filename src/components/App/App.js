@@ -15,6 +15,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ isActive, handleToogle }}>
+      {/* <Home /> */}
       <Tasks />
     </ThemeContext.Provider>
   );
