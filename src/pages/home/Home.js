@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+
+/** Import context global **/
+import { ThemeContext } from "../../components/App/App";
+/** Import components **/
+import Header from "../../layouts/Header";
+import Counter from "../../components/Counter/Counter";
+import FormName from "../../components/FormName/FormName";
 
 function Home() {
-  //
-  const [isDarkTheme, setIsDarkheme] = useState(false);
-  //
-  const toogleTheme = () => {
-    setIsDarkheme(!isDarkTheme);
-  };
+  /** State Global **/
+  const { isActive, handleToogle } = useContext(ThemeContext);
 
   return (
-    <div className={`home ${isDarkTheme ? "dark-theme" : "light-theme"}`}>
-      <div>
-        <h1>Home</h1>
-        <button onClick={toogleTheme}>Toogle theme</button>
-      </div>
+    <div className={`home ${isActive ? "dark-theme" : "light-theme"}`}>
+      <Header />
+      <button onClick={handleToogle}>Toogle theme</button>
+      <Counter />
+      <FormName />
     </div>
   );
 }
