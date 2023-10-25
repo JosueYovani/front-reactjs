@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 
-export const StudentForm = ({ usersWithGrades, setUserWithGrades }) => {
+/** Import context global **/
+import { GradesContext } from "../../../Tasks";
+
+export const StudentForm = () => {
+  /** State Global **/
+  const { usersWithGrades, setUserWithGrades } = useContext(GradesContext);
+
   /** Functions **/
   const addNewuser = () => {
     /** Get elements **/

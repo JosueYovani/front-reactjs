@@ -56,6 +56,35 @@
       }
     }
 
+    .student-search {
+      h3 {
+        margin: 16px 0;
+        text-align: center;
+      }
+
+      &--input {
+        display: flex;
+        margin-top: 16px;
+        height: 30px;
+        border: 1px solid $gray-300;
+        border-radius: 5px;
+        input {
+          border: 0;
+          border-radius: 5px 0 0 5px;
+        }
+        button {
+          border: 0;
+          width: 50px;
+          border-radius: 0 5px 5px 0;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
     .student-table {
       h3 {
         margin: 16px 0;
