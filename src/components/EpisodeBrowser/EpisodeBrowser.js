@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import Episode from "../Episode/Episode";
 
 export default function EpisodeBrowser({ episodes }) {
+  /** State Local **/
+  const [activeEpisode, setActiveEpisode] = useState(0);
+  /** Functions **/
+  const prevEpisode = () => {
+    if (activeEpisode > 0) {
+      setActiveEpisode(activeEpisode - 1);
+    } else {
+      alert("No more episodes");
+    }
+  };
+  const nextEpisode = () => {
+    if (activeEpisode < episodes.length - 1) {
+      setActiveEpisode(activeEpisode + 1);
+    } else {
+      alert("No more episodes");
+    }
+  };
+
   return (
     <React.Fragment>
-      {episodes.map((episode, index) => {
-        return (
-          <Episode
-            key={index}
-            name={episode.name}
-            air_date={episode.air_date}
-            episode={episode.episode}
-            cover_img={episode.cover_img}
-          />
-        );
-      })}
+      <Episode {...episodes[activeEpisode]} />
+      <button onClick={prevEpisode}>Prev</button>
+      <button onClick={nextEpisode}>Next</button>
     </React.Fragment>
   );
 }
