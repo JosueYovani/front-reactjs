@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 /** Imports Componenets **/
-import { Home, Tasks } from "../../pages";
+import { Episodes, Home, Tasks } from "../../pages";
 /** Init Context Global **/
 export const ThemeContext = createContext();
 
@@ -16,7 +16,8 @@ function App() {
   return (
     <ThemeContext.Provider value={{ isActive, handleToogle }}>
       {/* <Home /> */}
-      <Tasks />
+      {/* <Tasks /> */}
+      <Episodes />
     </ThemeContext.Provider>
   );
 }
