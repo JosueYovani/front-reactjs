@@ -18,8 +18,8 @@ function App() {
     <ThemeContext.Provider value={{ isActive, handleToogle }}>
       {/* <Home /> */}
       {/* <Tasks /> */}
-      {/* <Episodes /> */}
-      <Pokemons />
+      <Episodes />
+      {/* <Pokemons /> */}
     </ThemeContext.Provider>
   );
 }
